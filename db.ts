@@ -7,7 +7,9 @@ const addSufix = (name: string) => {
 
 // create simple gettrer to remove last 6 letters (should be "-sufix")
 const removeSufix = (name: string) => {
-  return name.slice(0, -6);
+  // console.log(typeof name); // test suggested by @Uzlopak
+
+  return ("" + name).slice(0, -6);
 };
 
 // create sample mongoose schema
